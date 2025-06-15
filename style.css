@@ -1,0 +1,145 @@
+
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    margin: 0 15px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745 !important;
+    transform: translateY(-3px);
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #28a745;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+.navbar {
+    background-color: #023504;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: #14532d !important; /* dark green text */
+}
+.navbar .nav-link:hover {
+    color: #28a745 !important;
+}
+
+
+/* Import Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    position: relative;
+    padding: 150px 0;
+    background-image: url('https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-primary {
+    background-color: #28a745; /* A vibrant green */
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* --- How It Works Section --- */
+.step-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.step-icon {
+    font-size: 4rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+/* --- Image Uploader --- */
+#image-preview {
+    max-height: 300px;
+    width: auto;
+    border: 3px solid #ddd;
+    padding: 5px;
+}
+
+/* --- Disease Library Section --- */
+.disease-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.disease-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.disease-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* --- Navbar Styling --- */
+.navbar-brand {
+    color: #28a745 !important;
+}
+.nav-link.btn-success {
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* --- Footer --- */
+footer a:hover {
+    color: #28a745 !important;
+}
